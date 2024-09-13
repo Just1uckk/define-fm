@@ -1,0 +1,1399 @@
+{
+	"language_abbreviation": {
+		"en": "EN",
+		"fr_CA": "FR_CA"
+	},
+	"app_theme": {
+		"system": "System",
+		"light": "Light",
+		"dark": "Dark"
+	},
+	"rda_item_state": {
+		"0": "Pending",
+		"1": "Approved",
+		"2": "Rejected",
+		"3": "Feedback request"
+	},
+	"rda_approval": {
+		"status": {
+			"0": "Pending",
+			"1": "Approved",
+			"2": "Rejected",
+			"3": "Feedback Pending",
+			"-99": "Disposed"
+		}
+	},
+	"setting_fields": {
+		"core": "Global Settings",
+		"core.general": "General",
+		"core.general.email.test": "Test email",
+		"core.rda": "RDA",
+		"core.email.administrator.email": "Administrator Email",
+		"core.email.smtp.socketFactory.class": "SMTP Socket Factory Class",
+		"core.email.smtp.auth": "SMTP Authentication",
+		"core.email.smtp.from": "Email From",
+		"core.email.smtp.host": "SMTP Host",
+		"core.email.smtp.password": "SMTP Password",
+		"core.email.smtp.port": "SMTP Port",
+		"core.email.smtp.ssl.protocols": "SMTP SSL Protocol",
+		"core.email.smtp.starttls.enable": "Enable STARTTLS",
+		"core.email.smtp.starttls.required": "Require STARTTLS",
+		"core.email.smtp.username": "SMTP Username",
+		"core.general.language.default": "Default Language",
+		"core.password.attempts": "Maximum Password Attempts",
+		"core.password.length.maximum": "Maximum Password Length",
+		"core.password.length.minimum": "Minimum Password Length",
+		"core.password.requires.digit": "One number",
+		"core.password.requires.lower": "One lower letter",
+		"core.password.requires.symbol": "One special character",
+		"core.password.requires.upper": "One capital letter",
+		"core.password.url": "Password Reset URL",
+		"core.general.token.refresh.window": "Refresh Window",
+		"core.rda.AllowSecurityOverride": "Allow Security Override",
+		"core.general.feedback.DefaultMessage": "Default Message",
+		"rda": "RDA Settings",
+		"rda.ApproverReassign": "Approver Reassign",
+		"rda.ApproverReassign.AllowReassign": "Allow Approver To Reassign Workpackage",
+		"rda.ApproverReassign.CertifiedApproversGroup": "Certified Approvers Group",
+		"rda.Autoforward": "Autoforward",
+		"rda.Autoforward.AllowConditionalApprover": "Allow Auto-Escalation to Conditional Approver",
+		"rda.Autoforward.AutoForwardAfterTimeExceeded": "Automatic Forward After Time Exceeded",
+		"rda.Autoforward.ForcePendingBeforeForwarding": "Force Approve Pending Items Before Forwarding",
+		"rda.Autoforward.PauseForFinalApprover": "Enter Paused State if Review Period for Final Approver Exceeded",
+		"rda.AutomaticEscalation": "Automatic Escalation",
+		"rda.AutomaticEscalation.DefaultTab": "Default Tab when No Pending Items",
+		"rda.AutomaticEscalation.KeepApprovalState": "Keep Approval State for Next Approver",
+		"rda.Autoprocess": "Autoprocess",
+		"rda.Autoprocess.AllowAutoprocessOfApproved": "Allow Auto Processing Of Approved Items",
+		"rda.Autoprocess.AutoMarkComplete": "Automatically Mark as Completed",
+		"rda.Autoprocess.MarkCompleteWhenPending": "Mark as Completed When Items Still Pending",
+		"rda.Autoprocess.MarkCompleteWhenRejected": "Mark as Completed When Items Rejected",
+		"rda.Button": "RDA Button",
+		"rda.Button.AllowCustomLabels": "Allow Approve/Reject Button and Tab Customization",
+		"rda.Button.ApproveLabel": "Label for Approve Button",
+		"rda.Button.RejectLabel": "Label for Reject Button",
+		"rda.ConditionalApprovers": "Conditional Approvers",
+		"rda.ConditionalApprovers.Attribute": "Conditional Approver Attribute",
+		"rda.Extension": "Extension",
+		"rda.Extension.CommentMandatory": "Extension Comment Mandatory?",
+		"rda.Extension.ReasonList": "Extension Reason List",
+		"rda.Extension.ReasonMandatory": "Extension Reason Mandatory",
+		"rda.General": "General",
+		"rda.General.AllowApprovalStatusOverride": "Allow Override Of Approval Status",
+		"rda.General.AllowFeedbackRequests": "Allow Feedback Requests",
+		"rda.General.ApproverInstructions": "Approver Instructions",
+		"rda.General.DaysToComplete": "Days to Complete",
+		"rda.General.DefaultFinalApprover": "Default Final Approver",
+		"rda.General.DefaultReportLocation": "Default Report Location",
+		"rda.General.ExcludeActiveFromSearch": "Exclude Active RDA Items From Appearing in a Disposition Search",
+		"rda.General.PurgeAuditOnDelete": "Purge Audit Trail When Workpackage is Deleted",
+		"rda.General.RecallNotice": "Recall Notice:",
+		"rda.Security": "Security",
+		"rda.Security.OverrideEnabledByDefault": "Enable Security Override By Default",
+		"rda.email": "Email Settings",
+		"rda.email.creator.include": "Email RDA Work Package Creator?",
+		"rda.email.reminder.days": "Number of days to remind",
+		"rda.email.reminder.days.instructions": "How many days before the due date an email reminder should be sent",
+		"rda.email.users.cc": "Carbon-Copy (CC) the following users",
+		"rda.email.users.to": "Email the following users",
+		"rda.email.users.to.instructions": "These users will be notified when an RDA has been submitted by the final Disposition Approver",
+		"rda.General.DefaultFeedbackMessage": "Default Feedback Message",
+		"rda.General.report.location": "Location"
+	},
+	"components": {
+		"select": {
+			"search_placeholder": "Search",
+			"empty_list": "Empty List"
+		},
+		"calendar": {
+			"back": "Back",
+			"close": "Close",
+			"done": "Done"
+		},
+		"dropzone": {
+			"validation_errors": {
+				"not_allowed_type": "Invalid file type. Please, upload only image type file {{allowedTypes}}",
+				"max_size": "Max size is {{size}}"
+			},
+			"subscription": "Drag \u0026 drop or \u003cspan\u003ebrowse\u003c/span\u003e",
+			"actions": {
+				"remove": "Remove Picture"
+			}
+		},
+		"filter_button": {
+			"button": "Filter"
+		},
+		"search_users": {
+			"placeholder": "Search users"
+		},
+		"search_bar": {
+			"placeholder": "Search"
+		},
+		"manage_columns": {
+			"button": "Manage columns",
+			"modal": {
+				"sub_title": "You can change columns order, or delete some columns from view",
+				"title": "Manage Columns",
+				"actions": {
+					"cancel": "Cancel",
+					"save": "Save"
+				}
+			}
+		},
+		"text_editor": {
+			"link-tooltip": {
+				"edit": "Edit",
+				"save": "Save",
+				"remove": "Remove"
+			}
+		},
+		"table": {
+			"pagination": {
+				"before_select_page_size": "Show",
+				"after_select_page_size": "items per page",
+				"items_stats": "Showing {{countItemsFrom}} to {{countItemsTo}} of {{totalItems}}"
+			},
+			"action_panel": {
+				"select_all": "Select All",
+				"items_selected": "Items Selected"
+			},
+			"filter_panel": {
+				"title": "Filters",
+				"selected_items_count": "{{count}} Selected"
+			},
+			"multiple_select": "Multiple select",
+			"sort_by": "Sort by"
+		},
+		"modal": {
+			"actions": {
+				"back": "Back",
+				"close": "Close"
+			}
+		},
+		"user_password_requirements": {
+			"one_lowercase": "One lowercase character",
+			"one_uppercase": "One uppercase character",
+			"one_number": "One number",
+			"one_special": "One special character",
+			"max_length": "{{length}} characters maximum",
+			"min_length": "{{length}} characters minimum"
+		}
+	},
+	"profile_settings_form": {
+		"generate_random_password": "Generate random password",
+		"user_image": "User Image",
+		"unsaved_changes_modal": {
+			"agreement_question": "Do you really want to leave without saving?",
+			"description": "You are about to leave  this page without saving. All changes will be lost.",
+			"title": "Unsaved changes",
+			"actions": {
+				"regret": "Leave without saving",
+				"save": "Save"
+			}
+		},
+		"groups": "Groups",
+		"default_number_items_per_page": "Default Number of items to display per page",
+		"display_name": "Display name",
+		"choose_group": "Choose group",
+		"password": "Password",
+		"default_tab_no_pending_items": "Default  Tab When No Pending Items",
+		"preferred_view": "Preferred View",
+		"theme": "Theme",
+		"default_homepage": "Default Home Page:",
+		"provider": "Provider",
+		"default_lang": "Default Language",
+		"email": "Email",
+		"username": "Username"
+	},
+	"copyright": "Copyright © 2022 Cassia CM. All Rights Reserved",
+	"disposition_report": {
+		"actions": {
+			"info": "Info",
+			"process_rda": {
+				"label": "Process RDA",
+				"selected_items": "Selected Items",
+				"all_items": "All Approved Items"
+			},
+			"action": {
+				"label": "Action",
+				"change_disposition_action": "Change Disposition Action"
+			}
+		},
+		"process_rda_items_modal": {
+			"title": "Process RDA Items",
+			"desc": {
+				"all_items": "Are you sure you want to perform the disposition action on all approved items?",
+				"selected_items": "Are you sure you want to perform the disposition action on the {{count}} selected items?"
+			},
+			"actions": {
+				"process": "Process",
+				"cancel": "Cancel"
+			}
+		},
+		"apply_remove_hold_modal": {
+			"title": "Apply/Remove Hold",
+			"actions": {
+				"apply": "Apply",
+				"cancel": "Cancel",
+				"reset": "Reset"
+			},
+			"form": {
+				"fields": {
+					"select_action": {
+						"label": "Action:",
+						"field": "Selection Action"
+					},
+					"select_hold": {
+						"label": "Hold:",
+						"field": "Select Hold"
+					}
+				}
+			}
+		},
+		"change_disposition_action_modal": {
+			"title": "Set the Disposition Action",
+			"actions": {
+				"apply": "Apply",
+				"cancel": "Cancel",
+				"reset": "Reset"
+			}
+		}
+	},
+	"users_and_groups": {
+		"total_stats": {
+			"groups": "Groups",
+			"title": "Total stats",
+			"users": "Users"
+		},
+		"search_users": "Search users",
+		"search_groups": "Search groups",
+		"tabs": {
+			"groups": "Groups",
+			"users": "Users"
+		},
+		"title": "Users and Groups",
+		"actions": {
+			"disable_users": "Disable selected users",
+			"enable_users": "Enable selected users",
+			"cancel_selection": "Cancel selection",
+			"delete_groups": "Delete Groups",
+			"disable_groups": "Disable selected groups",
+			"delete_users": "Delete Users",
+			"enable_groups": "Enable selected groups"
+		}
+	},
+	"set_new_password": {
+		"sub_title": "Your new password must be different to  previously used passwords",
+		"form": {
+			"password": "Password",
+			"validations": {
+				"invalid_token": "Invalid token"
+			},
+			"actions": {
+				"back_to_login": "Back to log in",
+				"submit": "Set new password"
+			},
+			"confirm_password": "Confirm password"
+		},
+		"title": "Set a new password"
+	},
+	"profile_settings_modal": {
+		"edit_title": "Edit - Profile Settings",
+		"tabs": {
+			"main_information": "Main Information",
+			"default_settings": "Default Settings"
+		},
+		"title": "Profile Settings",
+		"actions": {
+			"cancel": "Cancel",
+			"edit": "Edit",
+			"password_reset": "Password reset",
+			"reset_password": "Reset password",
+			"save": "Save Changes",
+			"close": "Close"
+		}
+	},
+	"disposition_search_snapshot_results": {
+		"table_controls": {
+			"search": "Search Items",
+			"show_filters": "Show filters"
+		},
+		"title": "Snapshot Results:",
+		"table": {
+			"no_result": "No result",
+			"no_search_result": {
+				"title": "No result",
+				"sub_title": "Try adjusting your search or filters to find were you’re looking for"
+			}
+		}
+	},
+	"disposition_searches": {
+		"delete_modal": {
+			"warning_text": "You cannot undo this action!",
+			"title": "Delete search?",
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			},
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "search?",
+				"after_name_other": "searches?"
+			}
+		},
+		"table_controls": {
+			"search": "Search for disposition search"
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Create New RDA Disposition Search",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Create",
+				"submit_search": "Create & Start Search"
+			}
+		},
+		"edit_modal": {
+			"sub_title": "",
+			"title": "Edit - {{name}}",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Save",
+				"submit_search": "Save & Start Search"
+			}
+		},
+		"sort_by": {
+			"date_added": "Date Added",
+			"name": "Name",
+			"last_run": "Last Run",
+			"created_by": "Created By"
+		},
+		"title": "RDA Disposition Searches",
+		"actions": {
+			"cancel_selection": "Cancel selection",
+			"create": "Create New",
+			"delete": "Delete"
+		},
+		"table": {
+			"snapshots": "Snapshots:",
+			"n/a": "n/a",
+			"date_created": "Date created:",
+			"last_run": "Last Run:",
+			"created_by": "Created By:",
+			"actions": {
+				"edit": "Edit",
+				"start_search": "Start Search",
+				"delete": "Delete"
+			},
+			"no_results": {
+				"title": "No Disposition Searches",
+				"desc": "No Disposition Searches result"
+			},
+			"results": "Results:"
+		},
+		"search_form": {
+			"query": "Query",
+			"name": "Name",
+			"provider": "Select Provider"
+		}
+	},
+	"disposition_search_snapshots": {
+		"delete_modal": {
+			"warning_text": "You cannot undo this action!",
+			"title": "Delete snapshot?",
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			},
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "snapshot?",
+				"after_name_other": "snapshots?"
+			}
+		},
+		"table_controls": {
+			"search": "Search for disposition search"
+		},
+		"actions": {
+			"cancel_selection": "Cancel selection",
+			"start_search": "Start search",
+			"delete": "Delete"
+		},
+		"table": {
+			"date/time": "Date/Time",
+			"no_results": {
+				"title": "No Disposition Search snapshots",
+				"desc": "No Disposition Search snapshots result"
+			},
+			"results": "Results:",
+			"status": {
+				"field": "Status:",
+				"ready": "Ready",
+				"not_ready": "Not Ready"
+			}
+		}
+	},
+	"log_in": {
+		"sub_title": "Sign in to continue",
+		"form": {
+			"password": "Password",
+			"actions": {
+				"sign_in": "Sign in"
+			},
+			"errors": {
+				"unauthorized": "Username or password is incorrect"
+			},
+			"forgot_password": "Forgot password?",
+			"username": "Username"
+		},
+		"title": "Welcome to Cassia CM"
+	},
+	"rda_assignments": {
+		"sort_by": {
+			"added_date": "Date added",
+			"days_left": "Days Left",
+			"name": "Name"
+		},
+		"title": "My RDA Assignments"
+	},
+	"not_found": {
+		"back_to_home_button": "Go to home page",
+		"title": "Page not found"
+	},
+	"rda_settings": {
+		"title": "RDA Settings"
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"rda_dashboard": {
+			"status": {
+				"title": "Status",
+				"legenda": {
+					"total": "Total",
+					"on_time": "On-time",
+					"late": "Late",
+					"completed": "Completed"
+				}
+			},
+			"disk_saved": {
+				"title": "Disk Space Saved",
+				"sub_title": "Since last",
+				"data": {
+					"week": "Week",
+					"month": "Month",
+					"year": "Year"
+				}
+			},
+			"avg_time_records": {
+				"title": "AVG Time per 1000 records"
+			},
+			"top_approvers": {
+				"title": "Top Approvers this month"
+			},
+			"rejections_total_records_for_review": {
+				"title": "Rejections vs Total Records Sent for Review"
+			},
+			"total_number_records_current_state": {
+				"title": "Total number of records in Current State X",
+				"legenda": {
+					"approved": "Approved for destruction",
+					"rejected": "Reject and extend",
+					"approved_archive": "Approved for archive"
+				}
+			},
+			"disc_space_saved_by_source_system": {
+				"title": "Disk Space saved over time by Source System",
+				"selects": {
+					"date": {
+						"label": "Date"
+					},
+					"source": {
+						"label": "Source"
+					}
+				}
+			},
+			"number_records_final_state_over_time": {
+				"title": "Number of Records in Final State Over time",
+				"selects": {
+					"date": {
+						"label": "Date"
+					},
+					"state": {
+						"label": "State"
+					}
+				}
+			}
+		},
+		"personal_dashboard": {
+			"top_approvers_by_total_files": {
+				"title": "Top Approvers this month (by total files)"
+			},
+			"top_approvers_by_review_time": {
+				"title": "Top Approvers this month (by Avg. Review Time)"
+			},
+			"number_records_reviewed_per_quarter": {
+				"title": "Number of Records Reviewed "
+			},
+			"on_time_completion": {
+				"title": "On Time Completion",
+				"chart_result_title": {
+					"excellent": "Excellent\nresult",
+					"good": "Good\nresult",
+					"bad": "Bad\nresult"
+				}
+			}
+		}
+	},
+	"check_your_email": {
+		"sub_title": "If you have an  account registered with",
+		"or": "or",
+		"did_not_receive_email": "Did not receive email?",
+		"instruction": "you will receive an email from us shortly.",
+		"title": "Check your email",
+		"actions": {
+			"resend": "Resend",
+			"contact": "Contact Administrator",
+			"back_to_log_in": "Back to Sign in"
+		}
+	},
+	"settings": {
+		"search_for_settings": "Search for settings",
+		"completed_action_success": "Action has been completed successfully",
+		"actions": {
+			"cancel": "Cancel",
+			"save": "Save Changes"
+		}
+	},
+	"languages": {
+		"fr_CA": "French (Canada)",
+		"en": "English"
+	},
+	"site_navigation_menu": {
+		"nav_links": {
+			"dashboard": "Dashboard",
+			"settings": {
+				"general": "Core Settings",
+				"settings": "Settings",
+				"rda": "RDA App"
+			},
+			"rda_work_packages": "RDA Admin Workspace",
+			"disposition_search": "RDA Disposition Searches",
+			"rda_assignments": "My RDA Assignments",
+			"users": "Users"
+		},
+		"actions": {
+			"toggle_menu": "Collapse menu"
+		}
+	},
+	"groups": {
+		"edit_group_form": {
+			"actions": {
+				"save": "Save Changes"
+			}
+		},
+		"edit_group_modal": {
+			"title": "Edit Group - {{groupName}}"
+		},
+		"delete_group_modal": {
+			"warning_text": "You cannot undo this action!",
+			"title": "Delete group?",
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			},
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "group?",
+				"after_name_other": "groups?"
+			}
+		},
+		"create_group_form": {
+			"validations": {
+				"DuplicateEntityException": "Name already exists"
+			},
+			"actions": {
+				"create": "Create User Group"
+			}
+		},
+		"create_new": "Create new",
+		"create_group_modal": {
+			"sub_title": "",
+			"title": "Add User Group"
+		},
+		"groups_table": {
+			"columns": {
+				"date_created": "Date created:",
+				"synchronization": "Synchronization:",
+				"created_by": "Created By:",
+				"production_content_server": "Production Content Server"
+			},
+			"sort_by": {
+				"added_by": "Added by",
+				"added_date": "Date added",
+				"name": "Name"
+			},
+			"actions": {
+				"edit": "Edit",
+				"disable": "Disable",
+				"enable": "Enable",
+				"delete": "Delete"
+			}
+		},
+		"group_form": {
+			"group_name": "Group Name",
+			"disabled": "Disabled",
+			"group_comment": "Group Comment",
+			"enabled": "Enabled",
+			"users": "Users"
+		}
+	},
+	"user_menu": {
+		"logout": "LogOut",
+		"profile_settings": "Profile Settings"
+	},
+	"dispositions": {
+		"table_controls": {
+			"search": "Search RDA Packages"
+		},
+		"tabs": {
+			"archived": "Archived",
+			"initiated": "Initiated",
+			"pending": "Pending"
+		},
+		"create_form": {
+			"validations": {
+				"DuplicateEntityException": "Name already exists"
+			},
+			"fields": {
+				"name": "RDA Package Name",
+				"select_disposition": "Select Disposition",
+				"source": "Source",
+				"snapshot": "Select Snapshot"
+			},
+			"title": "Main Information",
+			"actions": {
+				"create_rda": "Create RDA",
+				"set_disposition_action": "Set Disposition Action",
+				"select_approvers": "Select approvers"
+			}
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Create New Record Disposition Approval",
+			"disposition_action": {
+				"title": "Set the Disposition Action"
+			}
+		},
+		"sort_by": {
+			"added_date": "Date added",
+			"days_left": "Days Left",
+			"name": "Name"
+		},
+		"title": "RDA Admin Workspace",
+		"actions": {
+			"initiate": "Initiate",
+			"recall": "Recall",
+			"cancel_selection": "Cancel selection",
+			"archive": "Archive",
+			"creat_new": "Create new",
+			"delete": "Delete"
+		},
+		"table_columns": {
+			"dateCreated": "Date created:",
+			"createdBy": "Created By:"
+		},
+		"table": {
+			"no_result": {
+				"title": "No RDA’s",
+				"sub_title": "No RDA’s result"
+			},
+			"no_search_result": {
+				"title": "No RDA’s match your search",
+				"sub_title": "Try adjusting your search or filters to find were you’re looking for"
+			}
+		}
+	},
+	"users": {
+		"create_user_form": {
+			"actions": {
+				"create": "Create User"
+			}
+		},
+		"create_user_modal": {
+			"sub_title": "",
+			"title": "Add User"
+		},
+		"edit_user_modal": {
+			"title": "Edit User - {{userName}}"
+		},
+		"delete_user_modal": {
+			"warning_text": "You cannot undo this action!",
+			"title": "Delete user?",
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			},
+			"confirm_text": {
+				"before_username": "Are you sure you want to delete",
+				"username_one": "{{ username }}",
+				"username_other": "{{ count }} selected",
+				"after_username_one": "user?",
+				"after_username_other": "users?"
+			}
+		},
+		"edit_user_form": {
+			"actions": {
+				"cancel": "Cancel",
+				"password_reset": "Password reset",
+				"reset_password": "Reset Password",
+				"save": "Save Changes"
+			}
+		},
+		"create_new": "Create new",
+		"profile_user_modal": {
+			"provider": "Provider",
+			"success_copy_text": "Email address successfully copied!",
+			"groups": "Groups",
+			"actions": {
+				"submit": "Edit User",
+				"close": "Close"
+			},
+			"email": "Email"
+		},
+		"table": {
+			"columns": {
+				"auth_provider": "Auth Provider:"
+			},
+			"sort_by": {
+				"added_date": "Date added",
+				"display_name": "Display Name",
+				"name": "User Name"
+			},
+			"actions": {
+				"edit": "Edit",
+				"disable": "Disable",
+				"enable": "Enable",
+				"delete": "Delete"
+			}
+		},
+		"user_form": {
+			"generate_random_password": "Generate random password",
+			"user_password": "User Password",
+			"user_image": "User Image",
+			"global_admin": "Global Administrator",
+			"groups": "Groups",
+			"display_name": "Display name",
+			"choose_group": "Choose group",
+			"enabled": "Enabled",
+			"provider": "Provider",
+			"disabled": "Disabled",
+			"validation_errors": {
+				"duplicate": "This username already exists"
+			},
+			"email": "Email",
+			"username": "Username"
+		}
+	},
+	"disposition": {
+		"approvers_form": {
+			"conditional_approvers": {
+				"title": "Conditional Approvers"
+			},
+			"approvers": {
+				"title": "Approvers"
+			}
+		},
+		"filter_form": {
+			"fields": {
+				"date_added": "Date added:",
+				"days_left": "Days left:",
+				"approvers": "Approvers:",
+				"from": "From",
+				"to": "To",
+				"created_by": "Created By:"
+			},
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Apply filter",
+				"reset": "Reset to default"
+			}
+		},
+		"about_modal": {
+			"title": "About this disposition"
+		},
+		"tabs": {
+			"approved": "Approved for Destruction",
+			"report_items": "Report Items",
+			"feedback_pending": "Feedback Requested",
+			"rejected": "Reject \u0026 Extend",
+			"pending": "Pending",
+			"excluded_items": "Excluded Items",
+			"unreviewed_items": "Unreviewed Items"
+		},
+		"about_form": {
+			"instructions": "Instructions",
+			"days_left": "Days left",
+			"created": "Created:",
+			"days_outstanding": "Days Outstanding",
+			"due_date": "Due Date:",
+			"name": "Name",
+			"snapshot": "Snapshot"
+		},
+		"approvers": "Approvers",
+		"table_columns": {
+			"reason": "Reason",
+			"status_date": "Status Date",
+			"full_name": "Full Name",
+			"unique_id": "Unique ID",
+			"approval_status": "Approval status",
+			"feedback_users": "Feedback Users",
+			"comment": "Comment",
+			"exclusion_reason": "Exclusion Reason",
+			"exclusion_comment": "Exclusion Comment",
+			"location": "Location",
+			"calc_date": "Calc Date",
+			"rm_class": "RM Class",
+			"status": "Status"
+		},
+		"recall_disposition_modal": {
+			"many_items": {
+				"title": "Recall {{count}} RDAs:"
+			},
+			"form": {
+				"comment": "Recall Notice:"
+			},
+			"single_item": {
+				"title": "Recall RDA:"
+			},
+			"description_text": "The contents of this recall notice will be sent to the current approver or approvers. Markdown syntax is supported",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Save and Send"
+			}
+		},
+		"rda_settings_form": {
+			"security_override": {
+				"sub_text": "",
+				"name": "Security Override"
+			},
+			"instructions": "Instructions",
+			"reject_button_label": "Reject Button Label",
+			"autoprocess_approved_items": {
+				"sub_text": "",
+				"name": "Autoprocess Approved Items"
+			},
+			"name": "Name",
+			"approve_button_label": "Approve Button Label",
+			"time_to_complete": "Number of days to complete"
+		},
+		"approvers_modal": {
+			"sub_title": "",
+			"title": "Select Approvers For Your Records Disposition Approval"
+		},
+		"delete_disposition_modal": {
+			"warning_text": "You cannot undo this action!",
+			"title": "Delete RDA?",
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			},
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "RDA?",
+				"after_name_other": "RDAs?"
+			}
+		},
+		"table": {
+			"no_files": {
+				"description": "Looks like no items are included in this RDA, click on the Exlcuded Items tab to see why the items were excluded",
+				"title": "No files yet"
+			},
+			"complete_section": {
+				"description": "\u003cdiv\u003eAll items have been processed.\u003cdiv/\u003e\u003cdiv\u003eDo you wish to mark the disposition as complete?\u003cdiv/\u003e",
+				"action": "Yes, Mark as complete",
+				"title": "Great!"
+			},
+			"no_search_results": {
+				"description": "Try changing the filter or search term",
+				"title": "No files found"
+			}
+		},
+		"request_feedback_modal": {
+			"sub_title": "",
+			"title": "Request Feedback",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Request Feedback"
+			}
+		},
+		"modify_feedback_modal": {
+			"sub_title": "Only users who appear on all selected items will be able to be removed.",
+			"sub_sub_title": "When adding a feedback user, if they have already been chosen to provide feedback on an item, we will not reassign the user. This makes sure that no one ends up on the feedback list for an item more than once.",
+			"title": "Request Feedback",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Request Feedback"
+			}
+		},
+		"reject_and_extend_modal": {
+			"sub_title": "",
+			"title": "Reject \u0026 Extend",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Reject \u0026 Extend"
+			}
+		},
+		"filter_modal": {
+			"description": "",
+			"title": "Filters"
+		},
+		"reject_and_extend_form": {
+			"reason": "Reason",
+			"comment": "Comment"
+		},
+		"request_feedback_form": {
+			"comment": "Comment",
+			"add_user": "Add User"
+		},
+		"rda_settings_modal": {
+			"title": "RDA Settings",
+			"disposition_action_title": "Set the Disposition Action",
+			"actions": {
+				"cancel": "Cancel",
+				"set_disposition_action": "Set Disposition Action",
+				"save_changes": "Save Changes"
+			}
+		},
+		"table_controls": {
+			"search": "Search RDA Packages",
+			"show_filters": "Show filters"
+		},
+		"files_state_count": {
+			"approved": "Approved",
+			"items_count": "Items",
+			"rejected": "Rejected",
+			"pending": "Pending items",
+			"feedback": "Feedback requested",
+			"feedback_label": "Feedback Request"
+		},
+		"select_approvers_modal": {
+			"actions": {
+				"cancel": "Cancel",
+				"save": "Save"
+			}
+		},
+		"progressbar": {
+			"days_left": "Days left:"
+		},
+		"statuses": {
+			"building": "Building",
+			"late": "Late",
+			"on_time": "On Time",
+			"processing": "Processing",
+			"ready_to_complete": "Completed",
+			"building_new": "Building"
+		},
+		"file_info_modal": {
+			"links": {
+				"categories": "Categories",
+				"specific": "Specific",
+				"record_details": "Record Details"
+			},
+			"feedbacks": {
+				"fields": {
+					"recommendation": "Recommendation:",
+					"reason": "Reason:",
+					"comment": "Comment:"
+				}
+			},
+			"file_info": {
+				"columns": {
+					"status_date": "Status Date :",
+					"record_date": "Record Date :",
+					"unique_id": "Unique ID :",
+					"subject": "Subject :",
+					"calculated_date": "Calculated Date :",
+					"rsi": "RSI :",
+					"rm_class": "RM Class :"
+				}
+			},
+			"tabs": {
+				"feedback_from_others": "Feedback from other users",
+				"file_info": "File Info"
+			},
+			"general_info": {
+				"owner": "Owner:",
+				"description": "Description:",
+				"group_owner": "Group owner:"
+			},
+			"categories": {
+				"company": {
+					"title": "Company",
+					"table": {
+						"inactive": "Inactive",
+						"company_name": "Company Name",
+						"corporation_number": "Number"
+					}
+				},
+				"department": {
+					"title": "Department",
+					"table": {
+						"department": "Department",
+						"department_manager": "Department Manager"
+					}
+				},
+				"disposition_approvers": {
+					"title": "Disposition Approvers",
+					"table": {
+						"primary_approvers": "Primary Approvers",
+						"secondary_approvers": "Secondary Approvers"
+					}
+				}
+			},
+			"specific": {
+				"table": {
+					"columns": {
+						"temporary_id": "Temporary ID :",
+						"client": "Client :",
+						"box": "Box :",
+						"home_location": "Home Location :",
+						"offsite_storage_id": "Offsite Storage ID :",
+						"type": "Type :"
+					}
+				}
+			},
+			"record_details": {
+				"table": {
+					"columns": {
+						"status_date": "Status Date :",
+						"record_date": "Record Date :",
+						"subject": "Subject :",
+						"addressee(s)": "Addressee(s) :",
+						"official": {
+							"no": "no",
+							"field": "Official :",
+							"yes": "Yes"
+						},
+						"rsi": "RSI :",
+						"accession": "Accession :",
+						"author_of_originator": "Author of Originator :",
+						"originating": "Originating :",
+						"received_date": "Received Date :",
+						"other_addreessee": "Other Addreessee(s) :",
+						"rm_file_number": "RM File Number :",
+						"essential": "Essential :",
+						"status": "Status :"
+					}
+				}
+			}
+		},
+		"actions": {
+			"include_items": "Include selected Items",
+			"move_to_pending": "Move to Pending",
+			"modify_feedback": "Modify Feedback Users",
+			"reject_and_extend": "Reject \u0026 Extend",
+			"edit": "Edit RDA",
+			"cancel_selection": "Cancel selection",
+			"force_approval": "Force Approval",
+			"reassign": "Reassign",
+			"archive": "Archive",
+			"delete": "Delete",
+			"modify_approvers": "Modify Approvers",
+			"initiate": "Initiate",
+			"verify_approvers_rights": "Verify approvers rights",
+			"initiate_approval_process": "Initiate approval process",
+			"exclude_items": "Exclude selected items",
+			"recall": "Recall",
+			"request_feedback": "Request feedback",
+			"generate_audit_report": "Generate audit report",
+			"complete": "Mark as complete"
+		},
+		"reassign_approver_form": {
+			"email_comments": {
+				"sub_text": "",
+				"name": "Email Comments"
+			},
+			"comment": "Comment",
+			"from": "From:",
+			"to": "To:",
+			"actions": {
+				"cancel": "Cancel",
+				"submit": "Reassign"
+			},
+			"choose_user": "Choose User"
+		},
+		"force_approver_modal": {
+			"many_items": {
+				"warning_text": "Warning: You are about to Force Approve any outstanding records in this RDA for the users",
+				"title": "Force Approval {{count}} Items:"
+			},
+			"single_item": {
+				"warning_text": "Warning: You are about to Force Approve any outstanding records in this RDA for the user {{username}}",
+				"title": "Force Approve:"
+			},
+			"description_text": "This means any records that are found in the Pending Items or Feedback Requests tab will be marked as approved, and the RDA will be forwarded to the next approver.",
+			"actions": {
+				"regret": "No, Cancel",
+				"accept": "Yes, Force Approve"
+			},
+			"confirm_text": "Are you sure you want to continue?"
+		},
+		"reassign_approver_modal": {
+			"sub_title": "",
+			"title": "Reassign Approver"
+		},
+		"info_modal": {
+			"title": "RDA Info"
+		}
+	},
+	"validation_errors": {
+		"min_value": "Minimum value is {{length}}",
+		"field_must_match": "{{field}} must match",
+		"field_is_invalid": "This field is invalid",
+		"min_length": "Must be at least {{length}} characters",
+		"max_then_min": "The Maximum Password Length can not be less than the minimum password length",
+		"min_then_max": "The Minimum Password Length can not be more than the maximum password length",
+		"invalid_email": "Invalid email format",
+		"max_length": "Max length is {{length}} characters",
+		"max_value": "Maximum value is {{length}}",
+		"field_is_required": "This field is required"
+	},
+	"rda_report": {
+		"work_package_information": {
+			"title": "Information",
+			"fields": {
+				"source": "Source",
+				"disposition": "Disposition",
+				"disposition_snapshot": "Disposition Snapshot",
+				"status": "Status",
+				"included_items": "Items Included in Report",
+				"excluded_items": "Items Excluded from Report",
+				"initiated_date": "Initiated on",
+				"completed_date": "Completed Date"
+			}
+		},
+		"approvers_section": {
+			"title": "Status",
+			"days_left": "Days left:",
+			"aprrovers": "Aprrovers:",
+			"conditional_approvers": "Conditional Approvers:",
+			"approver": {
+				"status": {
+					"waiting": "Not Started yet",
+					"active": "Active",
+					"done": "Done"
+				}
+			},
+			"add_new_approver": {
+				"add_new_approver": "Add new approver",
+				"add_approver": "Add approver",
+				"add_conditional_approver": "Add Conditional Approver"
+			}
+		},
+
+		"actions": {
+			"generate_audit_report": "Generate audit report"
+		},
+		"table": {
+			"columns": {
+				"action": "Action",
+				"reason": "Reason",
+				"full_name": "Full name",
+				"feedback_users": "Feedback Users",
+				"comment": "Comment",
+				"status": "Status",
+				"location": "Location",
+				"unique_id": "Unique ID",
+				"rm_class": "RM Class",
+				"approval_status": "Approval status",
+				"exclusion_reason": "Exclusion Reason",
+				"exclusion_comment": "Exclusion Comment",
+				"status_date": "Status Date",
+				"calc_date": "Calc Date"
+			}
+		}
+	},
+	"general_settings": {
+		"title": "Core Settings",
+		"data_sync_providers": {
+			"providers_table": {
+				"sort_by": {
+					"provider_type": "Provider Type",
+					"name": "Name"
+				},
+				"action_panel": {
+					"disable": "Disable",
+					"enable": "Enable",
+					"cancel_selection": "Cancel selection",
+					"delete": "Delete"
+				},
+				"columns": {
+					"provider_type": "Provider:",
+					"comment": "Comment:",
+					"last_sync_date": "Last Sync Date:"
+				},
+				"actions": {
+					"edit": "Edit",
+					"delete": "Delete"
+				}
+			},
+			"provider_form": {
+				"configuration": "Configuration",
+				"destination": "Destination",
+				"name": "Name",
+				"periodicity": "Periodicity",
+				"comment": "Comment",
+				"type": "Provider Type",
+				"sync_now": "Sync Now",
+				"synchronize": "Synchronize"
+			},
+			"create_modal": {
+				"sub_title": "",
+				"title": "Create Data Sync Provider",
+				"actions": {
+					"submit": "Create Data Sync Provider"
+				}
+			},
+			"edit_modal": {
+				"sub_title": "",
+				"title": "Edit - {{name}}",
+				"actions": {
+					"cancel": "Cancel",
+					"submit": "Save Changes"
+				}
+			},
+			"delete_provider_modal": {
+				"title": "Delete data sync provider?",
+				"warning_text": "You cannot undo this action!",
+				"confirm_text": {
+					"before_name": "Are you sure you want to delete",
+					"name_one": "{{ name }}",
+					"name_other": "{{ count }} selected",
+					"after_name_one": "provider?",
+					"after_name_other": "providers?"
+				},
+				"actions": {
+					"cancel": "Cancel",
+					"accept": "Yes, delete"
+				}
+			},
+			"title": "Data Sync Providers",
+			"actions": {
+				"search": "Search Data Sync Providers",
+				"create_provider": "Create new"
+			}
+		},
+		"auth_provider": {
+			"providers_table": {
+				"action_panel": {
+					"disable": "Disable",
+					"enable": "Enable",
+					"cancel_selection": "Cancel selection",
+					"delete": "Delete"
+				},
+				"columns": {
+					"provider_type": "Provider Type:",
+					"comment": "Comment:",
+					"last_sync_date": "Last Sync Date:"
+				},
+				"sort_by": {
+					"provider_type": "Provider Type",
+					"name": "Name"
+				},
+				"actions": {
+					"edit": "Edit",
+					"delete": "Delete"
+				}
+			},
+			"title": "Authentication Providers",
+			"actions": {
+				"create_provider": "Create new"
+			}
+		}
+	},
+	"auth_provider": {
+		"provider_form": {
+			"configuration": "Configuration",
+			"create_users": "Create users",
+			"group_mapping": "Group Mapping",
+			"periodicity": "Periodicity",
+			"name": "Provider name",
+			"provider_type_group_name": {
+				"filled": "{{providerTypeName}} Group",
+				"empty": "\u003c$Provider_Type\u003e Group"
+			},
+			"comment": "Comment",
+			"type": "Provider Type",
+			"sync_now": "Sync now",
+			"cassia_group": "Cassia Core Group",
+			"synchronize": "Synchronize",
+			"wsdl": {
+				"authentication": "Authentication",
+				"memberservice": "Member service"
+			},
+			"authentication": {
+				"username": "Username",
+				"password": "Password"
+			}
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Add Authentication Provider",
+			"actions": {
+				"submit": "Create Authentication provider"
+			}
+		},
+		"edit_modal": {
+			"sub_title": "",
+			"title": "Edit Authentication Provider - {{providerName}}",
+			"actions": {
+				"submit": "Save Authentication provider"
+			}
+		},
+		"delete_provider_modal": {
+			"title": "Delete auth provider?",
+			"warning_text": "You cannot undo this action!",
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "provider?",
+				"after_name_other": "providers?"
+			},
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			}
+		}
+	},
+	"breadcrumbs": {
+		"disposition_search_snapshot": "Snapshot Results",
+		"rda_work_packages": "RDA Admin Workspace",
+		"disposition_searches": "RDA Disposition Searches",
+		"core_settings": "Core Settings",
+		"rda_assignments": "My RDA Assignments",
+		"users_and_groups": "Users and Groups",
+		"rda_settings": "RDA Settings",
+		"dashboard": "Dashboard",
+		"home": "Cassia Core"
+	},
+	"forgot_password": {
+		"sub_title": "No worries, we will send you reset instructions",
+		"form": {
+			"actions": {
+				"back_to_login": "Back to log in",
+				"submit": "Reset password"
+			},
+			"username": "Enter your username or email"
+		},
+		"title": "Forgot password?"
+	}
+}

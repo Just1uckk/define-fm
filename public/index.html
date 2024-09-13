@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#000000"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#1b1b1f"
+		/>
+		<meta
+			name="description"
+			content="Web site created using create-react-app"
+		/>
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<title>Cassia</title>
+
+		<!--		It needs to prevent color flickering-->
+		<style>
+			html[data-color-scheme='dark'] > body {
+				background-color: #1b1b1f;
+			}
+
+			html[data-color-scheme='light'] > body {
+				background-color: rgb(248, 250, 253);
+			}
+		</style>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<script>
+			(function () {
+				const persistedColorPreference =
+					window.localStorage.getItem('color-mode');
+				const hasPersistedPreference =
+					typeof persistedColorPreference === 'string';
+				const html = document.querySelector('html');
+				if (!html) return;
+
+				// If the user has explicitly chosen light or dark,
+				// let's use it. Otherwise, this value will be null.
+				if (hasPersistedPreference) {
+					if (persistedColorPreference !== 'system') {
+						html.setAttribute('data-color-scheme', persistedColorPreference);
+						return;
+					}
+				}
+				// If they haven't been explicit, let's check the media
+				// query
+				const mql = window.matchMedia('(prefers-color-scheme: dark)');
+				const hasMediaQueryPreference = typeof mql.matches === 'boolean';
+				if (hasMediaQueryPreference) {
+					const mode = mql.matches ? 'dark' : 'light';
+
+					html.setAttribute('data-color-scheme', mode);
+					return;
+				}
+				// If they are using a browser/OS that doesn't support
+				// color themes, let's default to 'light'.
+				html.setAttribute('data-color-scheme', 'light');
+			})();
+		</script>
+		<div id="root"></div>
+	</body>
+</html>

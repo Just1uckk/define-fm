@@ -1,0 +1,150 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/react-toastify/scss/variables';
+@import '../../node_modules/react-toastify/scss/toastContainer';
+@import '../../node_modules/react-toastify/scss/progressBar';
+@import '../../node_modules/react-loading-skeleton/dist/skeleton.css';
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Regular.eot');
+	src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Regular.woff2')
+			format('woff2'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Regular.woff')
+			format('woff'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Regular.ttf')
+			format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Bold.eot');
+	src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Bold.eot?#iefix')
+			format('embedded-opentype'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Bold.woff2')
+			format('woff2'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Bold.woff')
+			format('woff'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Bold.ttf')
+			format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Semibold.eot');
+	src: local('SF Pro Display Bold'), local('SFProDisplay-Semibold'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Semibold.eot?#iefix')
+			format('embedded-opentype'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Semibold.woff2')
+			format('woff2'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Semibold.woff')
+			format('woff'),
+		url('../shared/assets/fonts/SF_Pro_Display/SFProDisplay-Semibold.ttf')
+			format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html > body {
+	height: 100vh;
+	font-family: 'SF Pro Display';
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--background-primary) !important;
+	overflow-y: auto;
+}
+
+html,
+#root {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+body :focus-visible {
+	outline: none;
+}
+
+*.is-scroll-locked {
+	overflow-y: hidden !important;
+}
+
+a {
+	color: var(--palette-accent);
+	text-decoration: none;
+
+	&:visited {
+		color: var(--visited-link-color);
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button:focus-visible {
+	outline: none;
+}
+
+a:focus-visible {
+	outline: none;
+}
+
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
+
+input[type='search']::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type='search']::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+.setting-option-highlighted {
+	background-color: rgba(247, 186, 64, 0.2) !important;
+}
+
+html[data-color-scheme='dark'] {
+	& .react-loading-skeleton {
+		--base-color: var(--background-secondary);
+		--highlight-color: #403f3f;
+	}
+}

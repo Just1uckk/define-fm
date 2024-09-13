@@ -1,0 +1,1362 @@
+{
+	"language_abbreviation": {
+		"en": "EN",
+		"fr_CA": "FR_CA"
+	},
+	"app_theme": {
+		"system": "System",
+		"light": "Light",
+		"dark": "Dark"
+	},
+	"rda_item_state": {
+		"0": "Pending",
+		"1": "Approved",
+		"2": "Rejected",
+		"3": "Feedback request"
+	},
+	"rda_approval": {
+		"status": {
+			"0": "Pending",
+			"1": "Approved",
+			"2": "Rejected",
+			"3": "Feedback Pending",
+			"-99": "Disposed"
+		}
+	},
+	"setting_fields": {
+		"core": "Global Settings",
+		"core.general": "General",
+		"core.general.email.test": "Test email",
+		"core.rda": "RDA",
+		"core.email.administrator.email": "Administrator Email",
+		"core.email.smtp.socketFactory.class": "SMTP Socket Factory Class",
+		"core.email.smtp.auth": "Authentification SMTP",
+		"core.email.smtp.from": "Expéditeur du courriel",
+		"core.email.smtp.host": "Hôte SMTP",
+		"core.email.smtp.password": "Mot de passe SMTP",
+		"core.email.smtp.port": "Port SMTP",
+		"core.email.smtp.ssl.protocols": "Protocole SSL SMTP",
+		"core.email.smtp.starttls.enable": "Activer STARTTLS",
+		"core.email.smtp.starttls.required": "Demander STARTTLS",
+		"core.email.smtp.username": "Nom d’utilisateur SMTP",
+		"core.general.language.default": "Langue par défaut",
+		"core.password.attempts": "Nombre maximal de tentatives de saisie de mot de passe",
+		"core.password.length.maximum": "Longueur maximale du mot de passe",
+		"core.password.length.minimum": "Longueur maximale du mot de passe",
+		"core.password.requires.digit": "Un chiffre",
+		"core.password.requires.lower": "Une minuscule",
+		"core.password.requires.symbol": "Un caractère spécial",
+		"core.password.requires.upper": "Une majuscule",
+		"core.password.url": "URL de la réinitialisation du mot de passe",
+		"core.general.token.refresh.window": "Refresh Window",
+		"core.rda.AllowSecurityOverride": "Autoriser le remplacement de la sécurité",
+		"core.general.feedback.DefaultMessage": "Message par défaut",
+		"rda": "RDA Settings",
+		"rda.ApproverReassign": "Approver Reassign",
+		"rda.ApproverReassign.AllowReassign": "Permettre à l’approbateur de réaffecter le lot de travaux",
+		"rda.ApproverReassign.CertifiedApproversGroup": "Groupe d’approbateurs certifiés",
+		"rda.Autoforward": "Autoforward",
+		"rda.Autoforward.AllowConditionalApprover": "Permettre l’escalade automatique vers l’approbateur conditionnel",
+		"rda.Autoforward.AutoForwardAfterTimeExceeded": "Transfert automatique après dépassement du délai",
+		"rda.Autoforward.ForcePendingBeforeForwarding": "Forcer l’autorisation des éléments en attente avant de transmettre",
+		"rda.Autoforward.PauseForFinalApprover": "Mettre l’état sur pause si le délai d’examen du dernier approbateur est dépassé",
+		"rda.AutomaticEscalation": "Automatic Escalation",
+		"rda.AutomaticEscalation.DefaultTab": "Onglet par défaut lorsqu’aucun élément n’est en attente",
+		"rda.AutomaticEscalation.KeepApprovalState": "Conserver le statut d’autorisation pour le prochain approbateur",
+		"rda.Autoprocess": "Autoprocess",
+		"rda.Autoprocess.AllowAutoprocessOfApproved": "Permettre le traitement automatique des éléments approuvés",
+		"rda.Autoprocess.AutoMarkComplete": "Marquer automatiquement comme terminé",
+		"rda.Autoprocess.MarkCompleteWhenPending": "Marquer comme terminé lorsque des éléments sont encore en attente",
+		"rda.Autoprocess.MarkCompleteWhenRejected": "Marquer comme terminé lorsque des éléments sont refusés",
+		"rda.Button": "Bouton Autorisation de déclassement de document",
+		"rda.Button.AllowCustomLabels": "Permettre la personnalisation du bouton et de l’onglet Approuver/refuser",
+		"rda.Button.ApproveLabel": "Étiquette pour le bouton Autoriser",
+		"rda.Button.RejectLabel": "Étiquette pour le bouton Refuser",
+		"rda.ConditionalApprovers": "Conditional Approvers",
+		"rda.ConditionalApprovers.Attribute": "Attribut de l’approbateur conditionnel",
+		"rda.Extension": "Extension",
+		"rda.Extension.CommentMandatory": "Un commentaire est-il obligatoire pour la prolongation?",
+		"rda.Extension.ReasonList": "Liste des motifs de prolongation",
+		"rda.Extension.ReasonMandatory": "Motif obligatoire de prolongation",
+		"rda.General": "General",
+		"rda.General.AllowApprovalStatusOverride": "Permettre d’outrepasser le statut d’autorisation",
+		"rda.General.AllowFeedbackRequests": "Permettre des demandes de commentaires",
+		"rda.General.ApproverInstructions": "Instructions de l’approbateur",
+		"rda.General.DaysToComplete": "Nombre de jours pour exécution",
+		"rda.General.DefaultFinalApprover": "Dernier approbateur par défaut",
+		"rda.General.DefaultReportLocation": "Emplacement du rapport par défaut",
+		"rda.General.ExcludeActiveFromSearch": "Exclure les éléments actifs d’autorisation de déclassement de document pour qu’ils n’apparaissent pas dans une recherche de déclassement",
+		"rda.General.PurgeAuditOnDelete": "Effacer la piste de vérification lorsque le lot de travaux est supprimé",
+		"rda.General.RecallNotice": "Avis de rappel:",
+		"rda.Security": "Security",
+		"rda.Security.OverrideEnabledByDefault": "Activer le remplacement de sécurité par défaut",
+		"rda.email": "Paramètres du courriel",
+		"rda.email.creator.include": "Créateur d’autorisation de déclassement de document",
+		"rda.email.reminder.days": "Nombre de jours avant le rappel",
+		"rda.email.reminder.days.instructions": "Combien de jours avant la date limite doit-on envoyer un rappel par courriel?",
+		"rda.email.users.cc": "Mettre en copie conforme (CC) les utilisateurs suivants",
+		"rda.email.users.to": "Envoyer un courriel aux utilisateurs suivants",
+		"rda.email.users.to.instructions": "Ces utilisateurs reçoivent un avis lorsqu’une autorisation de déclassement de document est soumise par le dernier approbateur du déclassement",
+		"rda.General.DefaultFeedbackMessage": "Message de retour par défaut",
+		"rda.General.report.location": "Emplacement"
+	},
+	"components": {
+		"select": {
+			"search_placeholder": "Search",
+			"empty_list": "Empty List"
+		},
+		"calendar": {
+			"back": "Précédent",
+			"close": "Fermer",
+			"done": "Effectué"
+		},
+		"dropzone": {
+			"validation_errors": {
+				"not_allowed_type": "Type de fichier non valide. Téléverser seulement les formats de fichiers d’images {{allowedTypes}}",
+				"max_size": "La taille maximale est de {{size}}"
+			},
+			"subscription": "Glisser-déplacer ou \u003cspan\u003eparcourir\u003c/span\u003e",
+			"actions": {
+				"remove": "Retirer l’image"
+			}
+		},
+		"filter_button": {
+			"button": "Filtre"
+		},
+		"search_users": {
+			"placeholder": "Rechercher les utilisateurs"
+		},
+		"search_bar": {
+			"placeholder": "Rechercher"
+		},
+		"manage_columns": {
+			"button": "Gérer les colonnes",
+			"modal": {
+				"sub_title": "Vous pouvez modifier l’ordre des colonnes ou supprimer certaines colonnes de l’affichage",
+				"title": "Gérer les colonnes",
+				"actions": {
+					"cancel": "Annuler",
+					"save": "Enregistrer"
+				}
+			}
+		},
+		"text_editor": {
+			"link-tooltip": {
+				"edit": "Modifier",
+				"save": "Enregistrer",
+				"remove": "Enlever"
+			}
+		},
+		"table": {
+			"pagination": {
+				"before_select_page_size": "Show",
+				"after_select_page_size": "items per page",
+				"items_stats": "Showing {{countItemsFrom}} to {{countItemsTo}} of {{totalItems}}"
+			},
+			"action_panel": {
+				"select_all": "Tout sélectionner",
+				"items_selected": "éléments sélectionnés"
+			},
+			"filter_panel": {
+				"title": "Filtres",
+				"selected_items_count": "{{count}} sélectionné(s)"
+			},
+			"multiple_select": "Sélections multiples",
+			"sort_by": "Trier par"
+		},
+		"modal": {
+			"actions": {
+				"back": "Précédent",
+				"close": "Fermer"
+			}
+		},
+		"user_password_requirements": {
+			"one_lowercase": "One lowercase character",
+			"one_uppercase": "One uppercase character",
+			"one_number": "One number",
+			"one_special": "One special character",
+			"max_length": "{{length}} characters maximum",
+			"min_length": "{{length}} characters minimum"
+		}
+	},
+	"profile_settings_form": {
+		"generate_random_password": "Générer un mot de passe aléatoire",
+		"user_image": "Image de l’utilisateur",
+		"unsaved_changes_modal": {
+			"agreement_question": "Voulez-vous vraiment quitter cette page sans la sauvegarder?",
+			"description": "Vous êtes sur le point de quitter cette page sans qu’elle soit enregistrée. Toutes les modifications seront perdues.",
+			"title": "Modifications non enregistrées",
+			"actions": {
+				"regret": "Quitter sans sauvegarder",
+				"save": "Enregistrer"
+			}
+		},
+		"groups": "Groupes",
+		"default_number_items_per_page": "Nombre d’éléments par défaut à afficher par page",
+		"display_name": "Libellé d\u0027affichage",
+		"choose_group": "Choisir un groupe",
+		"password": "Mot de passe",
+		"default_tab_no_pending_items": "Onglet par défaut lorsqu’aucun élément n’est en attente",
+		"default_homepage": "Page d’accueil par défaut :",
+		"preferred_view": "Vue préférée",
+		"theme": "Thème",
+		"provider": "Fournisseur",
+		"default_lang": "Langue par défaut",
+		"email": "E-mail",
+		"username": "Nom de l’utilisateur"
+	},
+	"copyright": "© Cassia CM, 2022. Tous droits réservés",
+	"disposition_report": {
+		"actions": {
+			"info": "Informations",
+			"process_rda": {
+				"selected_items": "Selected Items",
+				"all_items": "All Approved Items"
+			}
+		},
+		"apply_remove_hold_modal": {
+			"title": "Apply/Remove Hold",
+			"actions": {
+				"apply": "Apply",
+				"cancel": "Cancel",
+				"reset": "Reset"
+			},
+			"form": {
+				"fields": {
+					"select_action": {
+						"label": "Action:",
+						"field": "Selection Action"
+					},
+					"select_hold": {
+						"label": "Hold:",
+						"field": "Select Hold"
+					}
+				}
+			}
+		},
+		"change_disposition_action_modal": {
+			"title": "Set the Disposition Action",
+			"actions": {
+				"apply": "Apply",
+				"cancel": "Cancel",
+				"reset": "Reset"
+			}
+		}
+	},
+	"users_and_groups": {
+		"total_stats": {
+			"groups": "Groupes",
+			"title": "Statistiques totales",
+			"users": "Utilisateurs"
+		},
+		"search_users": "Rechercher les utilisateurs",
+		"search_groups": "Rechercher les groupes",
+		"tabs": {
+			"groups": "Groupes",
+			"users": "Utilisateurs"
+		},
+		"title": "Utilisateurs et groupes",
+		"actions": {
+			"disable_users": "Désactiver les utilisateurs sélectionnés",
+			"enable_users": "Activer les utilisateurs sélectionnés",
+			"cancel_selection": "Annuler la sélection",
+			"delete_groups": "Supprimer les groupes",
+			"disable_groups": "Désactiver les groupes sélectionnés",
+			"delete_users": "Supprimer les utilisateurs",
+			"enable_groups": "Activer les groupes sélectionnés"
+		}
+	},
+	"set_new_password": {
+		"sub_title": "Votre nouveau mot de passe doit être différent des mots de passe déjà utilisés",
+		"form": {
+			"password": "Mot de passe",
+			"validations": {
+				"invalid_token": "Jeton non valide"
+			},
+			"actions": {
+				"back_to_login": "Retour à la connexion",
+				"submit": "Définir le nouveau mot de passe"
+			},
+			"confirm_password": "Confirmer le mot de passe"
+		},
+		"title": "Définir un nouveau mot de passe"
+	},
+	"profile_settings_modal": {
+		"edit_title": "Modifier - Paramètres du profil",
+		"tabs": {
+			"main_information": "Principales informations",
+			"default_settings": "Paramètres par défaut"
+		},
+		"title": "Paramètres de profil",
+		"actions": {
+			"cancel": "Annuler",
+			"edit": "Modifier",
+			"password_reset": "Réinitialisation du mot de passe",
+			"reset_password": "Réinitialiser le mot de passe",
+			"save": "Enregistrer les modifications",
+			"close": "Fermer"
+		}
+	},
+	"disposition_search_snapshot_results": {
+		"table_controls": {
+			"search": "Rechercher les éléments",
+			"show_filters": "Afficher les filtres"
+		},
+		"title": "Résultats de le lot de résultats :",
+		"table": {
+			"no_result": "No result",
+			"no_search_result": {
+				"title": "No result",
+				"sub_title": "Try adjusting your search or filters to find were you’re looking for"
+			}
+		}
+	},
+	"disposition_searches": {
+		"delete_modal": {
+			"warning_text": "Vous ne pouvez pas annuler cette action!",
+			"title": "Voulez-vous supprimer la recherche?",
+			"actions": {
+				"cancel": "Annuler",
+				"accept": "Oui, supprimer"
+			},
+			"confirm_text": {
+				"before_name": "Êtes-vous sûr de vouloir supprimer cet élément?",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "Voulez-vous effectuer une recherche?",
+				"after_name_other": "Voulez-vous effectuer une recherche?"
+			}
+		},
+		"table_controls": {
+			"search": "Rechercher une consultation de déclassement"
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Créer une nouvelle recherche d’autorisation de déclassement de document",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Créer",
+				"submit_search": "Créer et lancer la recherche"
+			}
+		},
+		"edit_modal": {
+			"sub_title": "",
+			"title": "Modifier - {{name}}",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Enregistrer",
+				"submit_search": "Enregistrer et lancer la recherche"
+			}
+		},
+		"sort_by": {
+			"date_added": "Date d’ajout",
+			"name": "Nom",
+			"last_run": "Dernière exécution",
+			"created_by": "Créé(e) par"
+		},
+		"title": "Recherches d’autorisation de déclassement de document",
+		"actions": {
+			"cancel_selection": "Annuler la sélection",
+			"create": "Créer un nouvel élément",
+			"delete": "Supprimer"
+		},
+		"table": {
+			"snapshots": "Instantanés :",
+			"n/a": "S.0.",
+			"date_created": "Date de création:",
+			"last_run": "Dernière exécution:",
+			"created_by": "Créé(e) par :",
+			"actions": {
+				"edit": "Modifier",
+				"start_search": "Démarrer la recherche",
+				"delete": "Supprimer"
+			},
+			"no_results": {
+				"title": "Aucune recherche de déclassement",
+				"desc": "Aucun résultat de recherche de déclassement"
+			},
+			"results": "Résultats :"
+		},
+		"search_form": {
+			"query": "Question",
+			"name": "Nom",
+			"provider": "Select Provider"
+		}
+	},
+	"disposition_search_snapshots": {
+		"delete_modal": {
+			"warning_text": "Vous ne pouvez pas annuler cette action!",
+			"title": "Voulez-vous supprimer l’instantané?",
+			"actions": {
+				"cancel": "Annuler",
+				"accept": "Oui, supprimer"
+			},
+			"confirm_text": {
+				"before_name": "Êtes-vous sûr de vouloir supprimer cet élément?",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "Voulez-vous un instantané?",
+				"after_name_other": "Voulez-vous un instantané?"
+			}
+		},
+		"table_controls": {
+			"search": "Rechercher une consultation de déclassement"
+		},
+		"actions": {
+			"cancel_selection": "Annuler la sélection",
+			"start_search": "Démarrer la recherche",
+			"delete": "Supprimer"
+		},
+		"table": {
+			"date/time": "Date/heure",
+			"no_results": {
+				"title": "Aucun instantané de recherche de déclassement",
+				"desc": "Aucun résultat d’instantané de recherche de déclassement"
+			},
+			"results": "Résultats :",
+			"status": {
+				"field": "Statut :",
+				"ready": "Prêt",
+				"not_ready": "Non prêt"
+			}
+		}
+	},
+	"log_in": {
+		"sub_title": "Se connecter pour continuer",
+		"form": {
+			"password": "Mot de passe",
+			"actions": {
+				"sign_in": "Se connecter"
+			},
+			"errors": {
+				"unauthorized": "Nom d’utilisateur ou mot de passe inexact"
+			},
+			"forgot_password": "Avez-vous oublié le mot de passe?",
+			"username": "Nom de l’utilisateur"
+		},
+		"title": "Bienvenue à Cassia CM"
+	},
+	"rda_assignments": {
+		"sort_by": {
+			"added_date": "Date d’ajout",
+			"days_left": "Jours restants",
+			"name": "Nom"
+		},
+		"title": "Mes attributions d’autorisation de déclassement de document"
+	},
+	"not_found": {
+		"back_to_home_button": "Aller à la page d’accueil",
+		"title": "Page introuvable"
+	},
+	"rda_settings": {
+		"title": "Paramètres d’autorisation de déclassement de document"
+	},
+	"dashboard": {
+		"title": "Tableau de bord",
+		"rda_dashboard": {
+			"status": {
+				"title": "Status",
+				"legenda": {
+					"total": "Total",
+					"on_time": "On-time",
+					"late": "Late",
+					"completed": "Completed"
+				}
+			},
+			"disk_saved": {
+				"title": "Disk Space Saved",
+				"sub_title": "Depuis la dernière",
+				"data": {
+					"week": "Une semaine",
+					"month": "Mois",
+					"year": "Année"
+				}
+			},
+			"avg_time_records": {
+				"title": "AVG Time per 1000 records"
+			},
+			"top_approvers": {
+				"title": "Top Approvers this month"
+			},
+			"rejections_total_records_for_review": {
+				"title": "Rejections vs Total Records Sent for Review"
+			},
+			"total_number_records_current_state": {
+				"title": "Total number of records in Current State X",
+				"legenda": {
+					"approved": "Approved for destruction",
+					"rejected": "Reject and extend",
+					"approved_archive": "Approved for archive"
+				}
+			},
+			"disc_space_saved_by_source_system": {
+				"title": "Disk Space saved over time by Source System",
+				"selects": {
+					"date": {
+						"label": "Date"
+					},
+					"source": {
+						"label": "Source"
+					}
+				}
+			},
+			"number_records_final_state_over_time": {
+				"title": "Number of Records in Final State Over time",
+				"selects": {
+					"date": {
+						"label": "Date"
+					},
+					"state": {
+						"label": "State"
+					}
+				}
+			}
+		},
+		"personal_dashboard": {
+			"top_approvers_by_total_files": {
+				"title": "Top Approvers this month (by total files)"
+			},
+			"top_approvers_by_review_time": {
+				"title": "Top Approvers this month (by Avg. Review Time)"
+			},
+			"number_records_reviewed_per_quarter": {
+				"title": "Number of Records Reviewed "
+			},
+			"on_time_completion": {
+				"title": "On Time Completion",
+				"chart_result_title": {
+					"excellent": "Excellent\nresult",
+					"good": "Good\nresult",
+					"bad": "Bad\nresult"
+				}
+			}
+		}
+	},
+	"check_your_email": {
+		"sub_title": "Si vous avez un compte enregistré auprès de",
+		"or": "Ou",
+		"did_not_receive_email": "Vous n’avez pas reçu de courriel?",
+		"instruction": "Vous recevrez sous peu un courriel de notre part.",
+		"title": "Consulter votre messagerie",
+		"actions": {
+			"resend": "Renvoyer",
+			"contact": "Communiquer avec l’administrateur",
+			"back_to_log_in": "Retour à la connexion"
+		}
+	},
+	"settings": {
+		"search_for_settings": "Rechercher les paramètres",
+		"completed_action_success": "Action has been completed successfully",
+		"actions": {
+			"cancel": "Annuler",
+			"save": "Enregistrer les modifications"
+		}
+	},
+	"languages": {
+		"fr_CA": "Français (Canada)",
+		"en": "Anglais"
+	},
+	"site_navigation_menu": {
+		"nav_links": {
+			"dashboard": "Dashboard",
+			"settings": {
+				"general": "Paramètres de base",
+				"settings": "Paramètres",
+				"rda": "Application d’autorisation de déclassement de document"
+			},
+			"rda_work_packages": "Espace de travail de l’administrateur des autorisations de déclassement de document",
+			"disposition_search": "Recherches d’autorisation de déclassement de document",
+			"rda_assignments": "Mes attributions d’autorisation de déclassement de document",
+			"users": "Utilisateurs"
+		},
+		"actions": {
+			"toggle_menu": "Réduire le menu"
+		}
+	},
+	"groups": {
+		"edit_group_form": {
+			"actions": {
+				"save": "Enregistrer les modifications"
+			}
+		},
+		"edit_group_modal": {
+			"title": "Modifier le groupe - {{groupName}}"
+		},
+		"delete_group_modal": {
+			"warning_text": "Vous ne pouvez pas annuler cette action!",
+			"title": "Voulez-vous supprimer le groupe?",
+			"actions": {
+				"cancel": "Annuler",
+				"accept": "Oui, supprimer"
+			},
+			"confirm_text": {
+				"before_name": "Êtes-vous sûr de vouloir supprimer cet élément?",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "Groupes?",
+				"after_name_other": "groups?"
+			}
+		},
+		"create_group_form": {
+			"validations": {
+				"DuplicateEntityException": "Ce nom existe déjà"
+			},
+			"actions": {
+				"create": "Créer un groupe d’utilisateurs"
+			}
+		},
+		"create_new": "Créer un nouvel élément",
+		"create_group_modal": {
+			"sub_title": "",
+			"title": "Ajouter un groupe d’utilisateurs"
+		},
+		"groups_table": {
+			"columns": {
+				"date_created": "Date de création:",
+				"synchronization": "Synchronisation :",
+				"created_by": "Créé(e) par :",
+				"production_content_server": "Production Content Server"
+			},
+			"sort_by": {
+				"added_by": "Ajouté par",
+				"added_date": "Date d’ajout",
+				"name": "Nom"
+			},
+			"actions": {
+				"edit": "Modifier",
+				"disable": "Désactiver",
+				"enable": "Activer",
+				"delete": "Supprimer"
+			}
+		},
+		"group_form": {
+			"group_name": "Nom du groupe",
+			"disabled": "Désactivé",
+			"group_comment": "Commentaire de groupe",
+			"enabled": "Activé",
+			"users": "Utilisateurs"
+		}
+	},
+	"user_menu": {
+		"logout": "Déconnexion",
+		"profile_settings": "Paramètres de profil"
+	},
+	"dispositions": {
+		"table_controls": {
+			"search": "Rechercher les dossiers d’autorisation de déclassement de document"
+		},
+		"tabs": {
+			"archived": "Archivé",
+			"initiated": "Initié",
+			"pending": "En attente"
+		},
+		"create_form": {
+			"validations": {
+				"DuplicateEntityException": "Ce nom existe déjà"
+			},
+			"fields": {
+				"name": "Nom du package RDA",
+				"select_disposition": "Sélectionner Déclassement",
+				"source": "Source",
+				"snapshot": "Lot de résultats"
+			},
+			"title": "Principales informations",
+			"actions": {
+				"create_rda": "Créer une autorisation de déclassement de document",
+				"set_disposition_action": "Set Disposition Action",
+				"select_approvers": "Sélectionner les approbateurs"
+			}
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Créer une nouvelle autorisation de déclassement de document",
+			"disposition_action": {
+				"title": "Set the Disposition Action"
+			}
+		},
+		"sort_by": {
+			"added_date": "Date d’ajout",
+			"days_left": "Jours restants",
+			"name": "Nom"
+		},
+		"title": "Espace de travail de l’administrateur des autorisations de déclassement de document",
+		"actions": {
+			"initiate": "Lancer",
+			"recall": "Rappel",
+			"cancel_selection": "Annuler la sélection",
+			"archive": "Archiver",
+			"creat_new": "Créer un nouvel élément",
+			"delete": "Supprimer"
+		},
+		"table_columns": {
+			"dateCreated": "Date de création:",
+			"createdBy": "Créé(e) par :"
+		},
+		"table": {
+			"no_result": "No result",
+			"no_search_result": {
+				"title": "No result",
+				"sub_title": "Try adjusting your search or filters to find were you’re looking for"
+			}
+		}
+	},
+	"users": {
+		"create_user_form": {
+			"actions": {
+				"create": "Créer un utilisateur"
+			}
+		},
+		"create_user_modal": {
+			"sub_title": "",
+			"title": "Ajouter un utilisateur"
+		},
+		"edit_user_modal": {
+			"title": "Modifier l’utilisateur - {{userName}}"
+		},
+		"delete_user_modal": {
+			"warning_text": "Vous ne pouvez pas annuler cette action!",
+			"title": "Voulez-vous supprimer l’utilisateur?",
+			"actions": {
+				"cancel": "Annuler",
+				"accept": "Oui, supprimer"
+			},
+			"confirm_text": {
+				"before_username": "Êtes-vous sûr de vouloir supprimer cet élément?",
+				"username_one": "{{ name }}",
+				"username_other": "{{ count }} selected",
+				"after_username_one": "Quel est le nom de l’utilisateur?",
+				"after_username_other": "users?"
+			}
+		},
+		"edit_user_form": {
+			"actions": {
+				"cancel": "Annuler",
+				"password_reset": "Réinitialisation du mot de passe",
+				"reset_password": "Réinitialiser le mot de passe",
+				"save": "Enregistrer les modifications"
+			}
+		},
+		"create_new": "Créer un nouvel élément",
+		"profile_user_modal": {
+			"provider": "Fournisseur",
+			"success_copy_text": "L’adresse courriel a été copiée.",
+			"groups": "Groupes",
+			"actions": {
+				"submit": "Modifier l’utilisateur",
+				"close": "Fermer"
+			},
+			"email": "E-mail"
+		},
+		"table": {
+			"columns": {
+				"auth_provider": "Fournisseur d’authentification :"
+			},
+			"sort_by": {
+				"added_date": "Date d’ajout",
+				"display_name": "Afficher un nom",
+				"name": "Nom d'utilisateur"
+			},
+			"actions": {
+				"edit": "Modifier",
+				"disable": "Désactiver",
+				"enable": "Activer",
+				"delete": "Supprimer"
+			}
+		},
+		"user_form": {
+			"generate_random_password": "Générer un mot de passe aléatoire",
+			"user_password": "Mot de passe de l’utilisateur",
+			"user_image": "Image de l’utilisateur",
+			"global_admin": "Administrateur général",
+			"groups": "Groupes",
+			"display_name": "Libellé d\u0027affichage",
+			"choose_group": "Choisir un groupe",
+			"enabled": "Activé",
+			"provider": "Fournisseur",
+			"disabled": "Désactivé",
+			"validation_errors": {
+				"duplicate": "Ce nom d’utilisateur existe déjà"
+			},
+			"email": "E-mail",
+			"username": "Nom de l’utilisateur"
+		}
+	},
+	"disposition": {
+		"approvers_form": {
+			"conditional_approvers": {
+				"title": "Approbateurs sous condition"
+			},
+			"approvers": {
+				"title": "Approbateurs"
+			}
+		},
+		"filter_form": {
+			"fields": {
+				"date_added": "Date d’ajout :",
+				"days_left": "Jours restants :",
+				"approvers": "Approbateurs :",
+				"from": "A partir de",
+				"to": "A",
+				"created_by": "Créé(e) par :"
+			},
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Appliquer le filtre",
+				"reset": "Réinitialiser aux paramètres de défaut"
+			}
+		},
+		"about_modal": {
+			"title": "À propos de ce déclassement"
+		},
+		"tabs": {
+			"approved": "Destruction autorisée",
+			"report_items": "Signaler des éléments",
+			"feedback_pending": "Commentaire exigé",
+			"rejected": "Refuser et prolonger",
+			"pending": "En attente",
+			"excluded_items": "Éléments exclus",
+			"unreviewed_items": "Unreviewed Items"
+		},
+		"about_form": {
+			"instructions": "Instructions",
+			"days_left": "Jours restants",
+			"created": "Date de création :",
+			"days_outstanding": "Jours d\u0027attente",
+			"due_date": "Date limite :",
+			"name": "Nom",
+			"snapshot": "Lot de résultats"
+		},
+		"approvers": "Approbateurs",
+		"table_columns": {
+			"reason": "Motif",
+			"status_date": "Date du statut",
+			"full_name": "Nom et prénom",
+			"unique_id": "ID unique",
+			"approval_status": "Statut d’autorisation",
+			"feedback_users": "Commentaires des utilisateurs",
+			"comment": "Commentaire",
+			"exclusion_reason": "Exclusion Reason",
+			"exclusion_comment": "Exclusion Comment",
+			"location": "Emplacement",
+			"calc_date": "Calcul de la date",
+			"rm_class": "Classe RM",
+			"status": "Statut"
+		},
+		"recall_disposition_modal": {
+			"many_items": {
+				"title": "Rappel de {{count}} autorisation(s) de déclassement de document :"
+			},
+			"form": {
+				"comment": "Avis de rappel :"
+			},
+			"single_item": {
+				"title": "Rappel d’autorisation de déclassement de document :"
+			},
+			"description_text": "Le contenu de ce rappel sera envoyé à l’approbateur ou aux approbateurs actuels. Prise en charge de la syntaxe Markdown",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Enregistrer et envoyer"
+			}
+		},
+		"rda_settings_form": {
+			"security_override": {
+				"sub_text": "",
+				"name": "Remplacement de sécurité"
+			},
+			"instructions": "Instructions",
+			"reject_button_label": "Étiquette du bouton Refuser",
+			"autoprocess_approved_items": {
+				"sub_text": "",
+				"name": "Traiter automatiquement les éléments approuvés"
+			},
+			"name": "Nom",
+			"approve_button_label": "Étiquette du bouton Approuver",
+			"time_to_complete": "Nombre de jours pour terminer"
+		},
+		"approvers_modal": {
+			"sub_title": "",
+			"title": "Sélectionner les approbateurs pour votre autorisation de déclassement de documents"
+		},
+		"delete_disposition_modal": {
+			"warning_text": "Vous ne pouvez pas annuler cette action!",
+			"title": "Voulez-vous supprimer l’autorisation de déclassement de document?",
+			"actions": {
+				"cancel": "Annuler",
+				"accept": "Oui, supprimer"
+			},
+			"confirm_text": {
+				"before_name": "Êtes-vous sûr de vouloir supprimer cet élément?",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "RDA?",
+				"after_name_other": "RDAs?"
+			}
+		},
+		"table": {
+			"no_files": {
+				"description": "Il semble qu’aucun élément n’a été joint à cette autorisation de déclassement de document. Cliquez sur l’onglet des éléments exclus pour afficher le motif d’exclusion",
+				"title": "Aucun fichier pour l’instant"
+			},
+			"complete_section": {
+				"description": "\u003cdiv\u003eTous les éléments ont été traités.\u003c/div\u003cdiv\u003eVoulez-vous indiquer que le déclassement est terminé?\u003c/div\u003e",
+				"action": "Oui, marquer comme terminé",
+				"title": "Super!"
+			},
+			"no_search_results": {
+				"description": "Essayez de modifier le filtre ou le critère de recherche",
+				"title": "Aucun fichier trouvé"
+			}
+		},
+		"request_feedback_modal": {
+			"sub_title": "",
+			"title": "Demander une évaluation",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Demander une évaluation"
+			}
+		},
+		"modify_feedback_modal": {
+			"sub_title": "Seuls les utilisateurs qui apparaissent sur tous les éléments sélectionnés pourront être supprimés.",
+			"sub_sub_title": "Lors de l'ajout d'un utilisateur de commentaires, s'il a déjà été choisi pour fournir des commentaires sur un élément, nous ne réaffecterons pas l'utilisateur. Cela garantit que personne ne figure plus d’une fois sur la liste de commentaires pour un élément.",
+			"title": "Demander une évaluation",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Demander une évaluation"
+			}
+		},
+		"reject_and_extend_modal": {
+			"sub_title": "",
+			"title": "Refuser et prolonger",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Refuser et prolonger"
+			}
+		},
+		"filter_modal": {
+			"description": "",
+			"title": "Filtres"
+		},
+		"reject_and_extend_form": {
+			"reason": "Motif",
+			"comment": "Commentaire"
+		},
+		"request_feedback_form": {
+			"comment": "Commentaire",
+			"add_user": "Ajouter un utilisateur"
+		},
+		"rda_settings_modal": {
+			"title": "Paramètres d’autorisation de déclassement de document",
+			"disposition_action_title": "Set the Disposition Action",
+			"actions": {
+				"cancel": "Annuler",
+				"set_disposition_action": "Set Disposition Action",
+				"save_changes": "Enregistrer les modifications"
+			}
+		},
+		"table_controls": {
+			"search": "Rechercher les dossiers d’autorisation de déclassement de document",
+			"show_filters": "Afficher les filtres"
+		},
+		"files_state_count": {
+			"approved": "Approuvé",
+			"items_count": "Eléments",
+			"rejected": "Refusé",
+			"pending": "Éléments en attente",
+			"feedback": "Commentaires demandés",
+			"feedback_label": "Demande de commentaires"
+		},
+		"select_approvers_modal": {
+			"actions": {
+				"cancel": "Annuler",
+				"save": "Enregistrer"
+			}
+		},
+		"progressbar": {
+			"days_left": "Jours restants :"
+		},
+		"statuses": {
+			"building": "Imeuble",
+			"late": "En retard",
+			"on_time": "À temps",
+			"processing": "Processing",
+			"ready_to_complete": "Completed",
+			"building_new": "Building"
+		},
+		"file_info_modal": {
+			"links": {
+				"categories": "Categories",
+				"specific": "Specific",
+				"record_details": "Record Details"
+			},
+			"feedbacks": {
+				"fields": {
+					"recommendation": "Recommendation:",
+					"reason": "Reason:",
+					"comment": "Comment:"
+				}
+			},
+			"file_info": {
+				"columns": {
+					"status_date": "Date du statut :",
+					"record_date": "Date du document :",
+					"unique_id": "ID unique :",
+					"subject": "Objet :",
+					"calculated_date": "Date calculée :",
+					"rsi": "RSI :",
+					"rm_class": "Classe RM :"
+				}
+			},
+			"tabs": {
+				"feedback_from_others": "Évaluation provenant d\u0027autres utilisateurs",
+				"file_info": "Informations sur le fichier"
+			},
+			"general_info": {
+				"owner": "Propriétaire :",
+				"description": "Description :",
+				"group_owner": "Responsable du groupe :"
+			},
+			"categories": {
+				"company": {
+					"title": "Entreprise",
+					"table": {
+						"inactive": "Inactif",
+						"company_name": "Nom de l’entreprise",
+						"corporation_number": "Nombre"
+					}
+				},
+				"department": {
+					"title": "Service",
+					"table": {
+						"department": "Service",
+						"department_manager": "Responsable du service"
+					}
+				},
+				"disposition_approvers": {
+					"title": "Approbateurs de déclassement",
+					"table": {
+						"primary_approvers": "Approbateurs principaux",
+						"secondary_approvers": "Approbateurs secondaires"
+					}
+				}
+			},
+			"specific": {
+				"table": {
+					"columns": {
+						"temporary_id": "Identifiant temporaire :",
+						"client": "Client :",
+						"box": "Boîte :",
+						"home_location": "Adresse domiciliaire :",
+						"offsite_storage_id": "ID de stockage hors site :",
+						"type": "Type :"
+					}
+				}
+			},
+			"record_details": {
+				"table": {
+					"columns": {
+						"status_date": "Date du statut :",
+						"record_date": "Date du document :",
+						"subject": "Objet :",
+						"addressee(s)": "Destinataire(s) :",
+						"official": {
+							"no": "Non",
+							"field": "OFFICIEL :",
+							"yes": "Oui"
+						},
+						"rsi": "RSI :",
+						"accession": "Acquisition :",
+						"author_of_originator": "Auteur ou créateur :",
+						"originating": "Provenance :",
+						"received_date": "Date de réception :",
+						"other_addreessee": "Autre(s) destinataire :",
+						"rm_file_number": "Numéro de fichier de suppression :",
+						"essential": "Essentiel :",
+						"status": "Statut :"
+					}
+				}
+			}
+		},
+		"actions": {
+			"include_items": "Joindre les éléments sélectionnés",
+			"move_to_pending": "Déplacer en attente",
+			"modify_feedback": "Modifier les commentaires",
+			"reject_and_extend": "Refuser et prolonger",
+			"edit": "Modifier l’autorisation de déclassement de document",
+			"cancel_selection": "Annuler la sélection",
+			"force_approval": "Forcer l\u0027approbation",
+			"reassign": "Réattribuer",
+			"archive": "Archiver",
+			"delete": "Supprimer",
+			"modify_approvers": "Modifier les approbateurs",
+			"initiate": "Lancer",
+			"verify_approvers_rights": "Vérifier les droits des approbateurs",
+			"initiate_approval_process": "Lancer la procédure d’autorisation",
+			"exclude_items": "Exclure les éléments sélectionnés",
+			"recall": "Rappel",
+			"request_feedback": "Demander une évaluation",
+			"generate_audit_report": "Générer le rapport d\u0027audit",
+			"complete": "Marquer comme terminé"
+		},
+		"reassign_approver_form": {
+			"email_comments": {
+				"sub_text": "",
+				"name": "Commentaires par courriel"
+			},
+			"comment": "Commentaire",
+			"from": "Expéditeur :",
+			"to": "À :",
+			"actions": {
+				"cancel": "Annuler",
+				"submit": "Réattribuer"
+			},
+			"choose_user": "Choisir un utilisateur"
+		},
+		"force_approver_modal": {
+			"many_items": {
+				"warning_text": "Avertissement : Vous êtes sur le point de forcer l’autorisation de tous les documents en traitement pour cette autorisation de déclassement de document pour les utilisateurs",
+				"title": "Forcer l’autorisation de {{count}} éléments :"
+			},
+			"single_item": {
+				"warning_text": "Avertissement : Vous êtes sur le point de forcer l’autorisation de tous les documents en traitement pour cette autorisation de déclassement de document pour l’utilisateur {{username}}",
+				"title": "Forcer l’autorisation :"
+			},
+			"description_text": "Ainsi, tous les enregistrements situés dans l\u0027onglet Items en attente ou Demande d\u0027évaluation seront marqués comme approuvés, et la RDA sera soumise à l\u0027approbateur suivant.",
+			"actions": {
+				"regret": "Non, annuler",
+				"accept": "Oui, forcer l’autorisation"
+			},
+			"confirm_text": "Êtes-vous sûr de vouloir poursuivre ?"
+		},
+		"reassign_approver_modal": {
+			"sub_title": "",
+			"title": "Réattribuer l\u0027approbateur"
+		},
+		"info_modal": {
+			"title": "Informations d’autorisation de déclassement de document"
+		}
+	},
+	"validation_errors": {
+		"min_value": "La valeur minimale est de {{length}}",
+		"field_must_match": "{{field}} doit correspondre",
+		"field_is_invalid": "Ce champ n’est pas valide",
+		"max_then_min": "The Maximum Password Length can not be less than the minimum password length",
+		"min_then_max": "The Minimum Password Length can not be more than the maximum password length",
+		"min_length": "Doit être d’au moins {{length}} caractères",
+		"invalid_email": "Format de courriel non valide",
+		"max_length": "La longueur maximale est de {{length}} caractères",
+		"max_value": "La valeur maximale est de {{length}}",
+		"field_is_required": "Ce champ est obligatoire"
+	},
+	"rda_report": {
+		"work_package_information": {
+			"title": "Information",
+			"fields": {
+				"source": "Source",
+				"disposition": "Disposition",
+				"disposition_snapshot": "Disposition Snapshot",
+				"status": "Status",
+				"included_items": "Items Included in Report",
+				"excluded_items": "Items Excluded from Report",
+				"initiated_date": "Initiated on",
+				"completed_date": "Completed Date"
+			}
+		},
+		"actions": {
+			"generate_audit_report": "Generate audit report"
+		},
+		"table": {
+			"columns": {
+				"action": "Action",
+				"reason": "Motif",
+				"full_name": "Nom et prénom",
+				"feedback_users": "Commentaires des utilisateurs",
+				"comment": "Commentaire",
+				"status": "Status",
+				"location": "Location",
+				"unique_id": "Unique ID",
+				"rm_class": "RM Class",
+				"approval_status": "Approval status",
+				"exclusion_reason": "Exclusion Reason",
+				"exclusion_comment": "Exclusion Comment",
+				"status_date": "Status Date",
+				"calc_date": "Calc Date"
+			}
+		}
+	},
+	"general_settings": {
+		"data_sync_providers": {
+			"providers_table": {
+				"sort_by": {
+					"provider_type": "Provider Type",
+					"name": "Name"
+				},
+				"action_panel": {
+					"disable": "Désactiver",
+					"enable": "Activer",
+					"cancel_selection": "Annuler la sélection",
+					"delete": "Supprimer"
+				},
+				"columns": {
+					"provider_type": "Fournisseur :",
+					"comment": "Commentaire :",
+					"last_sync_date": "Last Sync Date:"
+				},
+				"actions": {
+					"edit": "Modifier",
+					"delete": "Supprimer"
+				}
+			},
+			"provider_form": {
+				"configuration": "Configuration",
+				"destination": "Destination",
+				"name": "Nom",
+				"periodicity": "Périodicité",
+				"comment": "Commentaire",
+				"type": "Type du fournisseur",
+				"sync_now": "Synchroniser maintenant",
+				"synchronize": "Synchroniser"
+			},
+			"create_modal": {
+				"sub_title": "",
+				"title": "Créer un fournisseur de synchronisation des données",
+				"actions": {
+					"submit": "Créer un fournisseur de synchronisation des données"
+				}
+			},
+			"edit_modal": {
+				"sub_title": "",
+				"title": "Modifier - {{name}}",
+				"actions": {
+					"cancel": "Annuler",
+					"submit": "Enregistrer les modifications"
+				}
+			},
+			"delete_provider_modal": {
+				"title": "Delete data sync provider?",
+				"warning_text": "You cannot undo this action!",
+				"confirm_text": {
+					"before_name": "Are you sure you want to delete",
+					"name_one": "{{ name }}",
+					"name_other": "{{ count }} selected",
+					"after_name_one": "provider?",
+					"after_name_other": "providers?"
+				},
+				"actions": {
+					"cancel": "Cancel",
+					"accept": "Yes, delete"
+				}
+			},
+
+			"title": "Fournisseurs de synchronisation de données",
+			"actions": {
+				"search": "Rechercher des fournisseurs de synchronisation de données",
+				"create_provider": "Créer un nouvel élément"
+			}
+		},
+		"title": "Paramètres généraux",
+		"auth_provider": {
+			"providers_table": {
+				"action_panel": {
+					"disable": "Désactiver",
+					"enable": "Activer",
+					"cancel_selection": "Annuler la sélection",
+					"delete": "Supprimer"
+				},
+				"columns": {
+					"provider_type": "Type du fournisseur :",
+					"comment": "Commentaire :",
+					"last_sync_date": "Last Sync Date:"
+				},
+				"sort_by": {
+					"provider_type": "Type du fournisseur",
+					"name": "Nom"
+				},
+				"actions": {
+					"edit": "Modifier",
+					"delete": "Supprimer"
+				}
+			},
+			"title": "Fournisseurs d’authentification",
+			"actions": {
+				"create_provider": "Créer un nouvel élément"
+			}
+		}
+	},
+	"auth_provider": {
+		"provider_form": {
+			"configuration": "Configuration",
+			"create_users": "Créer des utilisateurs",
+			"group_mapping": "Schématisation du groupe",
+			"periodicity": "Périodicité",
+			"name": "Nom du fournisseur",
+			"provider_type_group_name": {
+				"filled": "Groupe {{providerTypeName}}",
+				"empty": "Groupe \u003c$Provider_Type\u003e"
+			},
+			"comment": "Commentaire",
+			"type": "Type du fournisseur",
+			"sync_now": "Synchroniser maintenant",
+			"cassia_group": "Groupe principal Cassia",
+			"synchronize": "Synchroniser",
+			"wsdl": {
+				"authentication": "Authentication",
+				"memberservice": "Member service"
+			},
+			"authentication": {
+				"username": "Username",
+				"password": "Password"
+			}
+		},
+		"create_modal": {
+			"sub_title": "",
+			"title": "Ajouter un fournisseur d’authentification",
+			"actions": {
+				"submit": "Créer un fournisseur d’authentification"
+			}
+		},
+		"edit_modal": {
+			"sub_title": "",
+			"title": "Modifier le fournisseur d’authentification - {{providerName}}",
+			"actions": {
+				"submit": "Enregistrer le fournisseur d’authentification"
+			}
+		},
+		"delete_provider_modal": {
+			"title": "Delete auth provider?",
+			"warning_text": "You cannot undo this action!",
+			"confirm_text": {
+				"before_name": "Are you sure you want to delete",
+				"name_one": "{{ name }}",
+				"name_other": "{{ count }} selected",
+				"after_name_one": "provider?",
+				"after_name_other": "providers?"
+			},
+			"actions": {
+				"cancel": "Cancel",
+				"accept": "Yes, delete"
+			}
+		}
+	},
+	"breadcrumbs": {
+		"disposition_search_snapshot": "Résultats d’instantané",
+		"rda_work_packages": "Espace de travail de l’administrateur des autorisations de déclassement de document",
+		"disposition_searches": "Recherches d’autorisation de déclassement de document",
+		"core_settings": "Paramètres généraux",
+		"rda_assignments": "Mes attributions d’autorisation de déclassement de document",
+		"users_and_groups": "Utilisateurs et groupes",
+		"rda_settings": "Paramètres d’autorisation de déclassement de document",
+		"dashboard": "Tableau de bord",
+		"home": "Application d’autorisation de déclassement de documents"
+	},
+	"forgot_password": {
+		"sub_title": "Ne vous inquiétez pas, nous allons vous envoyer les instructions de réinitialisation",
+		"form": {
+			"actions": {
+				"back_to_login": "Retour à la connexion",
+				"submit": "Réinitialiser le mot de passe"
+			},
+			"username": "Inscrire votre nom d’utilisateur ou votre adresse courriel"
+		},
+		"title": "Avez-vous oublié le mot de passe?"
+	}
+}

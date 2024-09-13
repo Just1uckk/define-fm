@@ -1,0 +1,81 @@
+{
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"extends": [
+		"react-app",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"prettier",
+		"simple-import-sort",
+		"import"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"rules": {
+		"simple-import-sort/imports": [
+			"warn",
+			{
+				"groups": [
+					// Packages `react` related packages come first.
+					["^react", "^@?\\w"],
+					// Api packages.
+					["^(app/api)(/.*|$)"],
+					// Internal packages.
+					["^(app/store)(/.*|$)"],
+					// Settings packages.
+					["^(app/settings)(/.*|$)"],
+					// Types packages.
+					["^(shared/types)(/.*|$)"],
+					// Constants packages.
+					["^(shared/constants)(/.*|$)"],
+					// Hooks packages.
+					["^(shared/hooks)(/.*|$)"],
+					// Components packages.
+					["^(shared/components)(/.*|$)"],
+					// Side effect imports.
+					["^\\u0000"],
+					// Parent imports. Put `..` last.
+					["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+					// Other relative imports. Put same-folder imports and `.` last.
+					["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+					// Style imports.
+					["^.+\\.?(css)$"]
+				]
+			}
+		],
+
+		"react/react-in-jsx-scope": "off",
+		"no-param-reassign": 0,
+		"no-useless-return": 0,
+		"no-mixed-spaces-and-tabs": 0,
+		"react-hooks/exhaustive-deps": 0,
+		"no-sequences": [0, "SequenceExpression"],
+		"@typescript-eslint/no-non-null-assertion": 0,
+		"@typescript-eslint/no-explicit-any": 0
+	}
+}
